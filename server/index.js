@@ -1,7 +1,6 @@
 /* eslint consistent-return:0 */
 
 const express = require('express');
-const proxy = require('http-proxy-middleware');
 const logger = require('./logger');
 
 const argv = require('./argv');
@@ -25,8 +24,6 @@ setup(app, {
 const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
-
-app.use('/api', proxy({ target: 'https://api.yaas.tools/', changeOrigin: true, logLevel: 'debug' }));
 
 // Start your app.
 app.listen(port, host, (err) => {

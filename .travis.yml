@@ -2,8 +2,6 @@ language: node_js
 
 node_js:
   - 8
-  - 7
-  - 6
 
 script:
   - node ./internals/scripts/generate-templates-for-linting
@@ -25,3 +23,15 @@ cache:
   yarn: true
   directories:
     - node_modules
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: www.yaas.tools
+  region: eu-west-2
+  local_dir: build
+  skip_cleanup: true
+  acl: public_read
+  on:
+    branch: master
