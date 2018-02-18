@@ -11,13 +11,13 @@
 //   wrapper: "Form-wrapper-161",
 // };
 //
-// describe('<Form />', () => {
-//   it.only('should render the input with the url', () => {
+describe('<Form />', () => {
+  it('should render the input with the url', () => {
 //     const renderedComponent = shallow(
 //       <Form classes={classes} url='' />
 //     );
 //     expect(renderedComponent.contains(<FormControl fullWidth className={classes.formControl} />)).toEqual(true);
-//   });
+  });
 //
 //   it('should render fetch the repos on mount if a username exists', () => {
 //     const submitSpy = jest.fn();
@@ -100,4 +100,4 @@
 //       });
 //     });
 //   });
-// });
+});
