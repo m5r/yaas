@@ -19,6 +19,7 @@ import { withStyles } from 'material-ui/styles';
 import { Delete as DeleteIcon, FileDownload as FileDownloadIcon, MoreVert as MoreVertIcon } from 'material-ui-icons';
 import { Manager, Popper, Target } from 'react-popper';
 import ClickAwayListener from 'material-ui/utils/ClickAwayListener';
+import FileItemMenuItemLink from 'components/FileItemMenuItemLink';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -110,36 +111,20 @@ class FileItemSecondaryAction extends Component { // eslint-disable-line react/p
                 <ClickAwayListener onClickAway={this.handleClose}>
                   <Grow in={isMenuOpen} id='secondary-action'>
                     <Paper>
-                      <MenuList
-                        role='menu'
-                      >
-                        <MenuItem
+                      <MenuList role='menu'>
+                        <FileItemMenuItemLink
+                          isMenuOpen={isMenuOpen}
+                          message={messages.openOriginalResource}
                           onClick={this.handleClose}
-                          className={classes.pointerEventsNone}
-                        >
-                          <a
-                            href={source}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className={classNames(classes.link, { [classes.pointerEventsAuto]: isMenuOpen })}
-                          >
-                            <FormattedMessage {...messages.openOriginalResource} />
-                          </a>
-                        </MenuItem>
-                        <MenuItem
-                          onClick={this.handleClose}
-                          className={classes.pointerEventsNone}
+                          url={source}
+                        />
+                        <FileItemMenuItemLink
                           disabled={typeof url === 'undefined'}
-                        >
-                          <a
-                            href={url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className={classes.link}
-                          >
-                            <FormattedMessage {...messages.download} />
-                          </a>
-                        </MenuItem>
+                          isMenuOpen={isMenuOpen}
+                          message={messages.download}
+                          onClick={this.handleClose}
+                          url={url}
+                        />
                         <MenuItem
                           onClick={() => handleDeleteClick(source)}
                         >

@@ -84,7 +84,7 @@ export class Form extends PureComponent { // eslint-disable-line react/prefer-st
           />
         </FormControl>
         <div className={classes.wrapper}>
-          <Button onClick={() => handleSubmit(url)} fab color='primary'>
+          <Button onClick={() => handleSubmit(url)} variant='fab' color='primary'>
             <AddIcon />
           </Button>
         </div>

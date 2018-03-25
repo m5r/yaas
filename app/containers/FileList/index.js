@@ -44,6 +44,9 @@ const styles = (theme) => ({
     color: 'inherit',
     textDecoration: 'inherit',
   },
+  list: {
+    width: '100%',
+  },
 });
 
 export class FileList extends Component { // eslint-disable-line react/prefer-stateless-function
@@ -82,7 +85,7 @@ export class FileList extends Component { // eslint-disable-line react/prefer-st
 
     return (
       <Grid item xs={12} md={6} className={classes.grid}>
-        <List>
+        <List className={classes.list}>
           {
             files &&
             files.map((file, index) =>
