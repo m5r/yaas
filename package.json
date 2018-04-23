@@ -289,7 +289,7 @@
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "2.0.1",
-    "babel-cli": "6.24.1",
+    "babel-cli": "6.26.0",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.0",
