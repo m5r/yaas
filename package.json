@@ -281,7 +281,7 @@
     "redux-immutable": "4.0.0",
     "redux-saga": "0.16.0",
     "reselect": "3.0.1",
-    "rollbar": "2.3.9",
+    "rollbar": "2.4.1",
     "sanitize.css": "4.1.0",
     "styled-components": "2.3.0",
     "warning": "3.0.0",
