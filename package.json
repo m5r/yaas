@@ -341,7 +341,7 @@
     "stylelint": "8.3.1",
     "stylelint-config-standard": "18.0.0",
     "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.1.1",
+    "stylelint-processor-styled-components": "1.5.2",
     "url-loader": "0.5.8",
     "webpack": "3.5.5",
     "webpack-dev-middleware": "1.11.0",
