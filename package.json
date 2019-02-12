@@ -291,7 +291,7 @@
     "add-asset-html-webpack-plugin": "2.0.1",
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
-    "babel-eslint": "7.2.3",
+    "babel-eslint": "9.0.0",
     "babel-loader": "7.1.0",
     "babel-plugin-dynamic-import-node": "1.0.2",
     "babel-plugin-react-intl": "2.3.1",
