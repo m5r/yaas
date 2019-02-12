@@ -282,7 +282,7 @@
     "redux-saga": "0.16.0",
     "reselect": "3.0.1",
     "rollbar": "2.3.9",
-    "sanitize.css": "4.1.0",
+    "sanitize.css": "8.0.0",
     "styled-components": "2.3.0",
     "warning": "3.0.0",
     "whatwg-fetch": "2.0.3"
