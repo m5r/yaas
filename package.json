@@ -249,7 +249,7 @@
   "dependencies": {
     "axios": "0.18.0",
     "babel-polyfill": "6.26.0",
-    "chalk": "2.3.2",
+    "chalk": "2.4.2",
     "classnames": "2.2.5",
     "compression": "1.7.2",
     "cross-env": "5.1.4",
