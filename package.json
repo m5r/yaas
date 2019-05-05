@@ -44,7 +44,9 @@
     "test:clean": "rimraf ./coverage",
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.js": [
@@ -285,7 +287,8 @@
     "sanitize.css": "4.1.0",
     "styled-components": "2.3.0",
     "warning": "3.0.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "2.0.1",
@@ -346,5 +349,6 @@
     "webpack": "3.5.5",
     "webpack-dev-middleware": "1.11.0",
     "webpack-hot-middleware": "2.18.0"
-  }
+  },
+  "snyk": true
 }
